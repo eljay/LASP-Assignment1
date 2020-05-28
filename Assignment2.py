@@ -11,29 +11,33 @@ from planetClass import Uranus
 from planetClass import Neptune
 from planetClass import Pluto
 
-mercury = Mercury()
-print(mercury.info())
+def main():
+    mercury = Mercury()
+    print(mercury.info())
 
-venus = Venus()
-print(venus.info())
+    venus = Venus()
+    print(venus.info())
 
-earth = Earth()
-print(earth.info())
+    earth = Earth()
+    print(earth.info())
 
-mars = Mars()
-print(mars.info())
+    mars = Mars()
+    print(mars.info())
 
-jupiter = Jupiter()
-print(jupiter.info())
+    jupiter = Jupiter()
+    print(jupiter.info())
 
-saturn = Saturn()
-print(saturn.info())
+    saturn = Saturn()
+    print(saturn.info())
 
-uranus = Uranus()
-print(uranus.info())
+    uranus = Uranus()
+    print(uranus.info())
 
-neptune = Neptune()
-print(neptune.info())
+    neptune = Neptune()
+    print(neptune.info())
 
-pluto = Pluto()
-print(pluto.info())
+    pluto = Pluto()
+    print(pluto.info())
+
+if __name__ == "__main__":
+    main()

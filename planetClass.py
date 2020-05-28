@@ -6,18 +6,38 @@ class Planet(object):
         self.orbitalPeriod = orbitalPeriod
 
     def getDistanceToSun(self):
+        """ 
+            Finds the distance to the sun for Planet
+            input: self - Planet <class>
+            output: returns distance to sun for planet
+        """
         return self.distanceToSun
+        
 
     def getOrbitalPeriod(self):
+        """ 
+            Finds the orbital period for Planet
+            input: self - Planet <class>
+            output: returns orbital period for planet
+        """
         return self.orbitalPeriod
+      
 
     def info(self):
         return "The Planet is {} km to its sun and takes {} Earth years to orbit its sun.".format(self.getDistanceToSun(), self.getOrbitalPeriod())
 
     def setDistanceToSun(self, distance):
+        """ 
+            Sets the distance to the sun for Planet
+            input: self, distance <class>
+        """
         self.distanceToSun = distance
 
     def setOrbitalPeriod(self, orbitalPeriod):
+        """ 
+            Sets the orbital period for Planet
+            input: self, orbitalPeriod <class>
+        """
         self.orbitalPeriod = orbitalPeriod
 
  
@@ -29,9 +49,19 @@ class Mercury(Planet):
         self.gravity = 3.7
     
     def getDiameter(self):
+        """ 
+            Finds the diameter of Mercury
+            input: self - Mercury <class>
+            output: returns diameter of Mercury
+        """
         return self.diameter
     
     def getGravity(self):
+        """ 
+            Finds the gravitational acceleration of Mercury
+            input: self - Mercury <class>
+            output: returns gravitational acceleration of Mercury
+        """
         return self.gravity
 
     def info(self):
@@ -44,9 +74,19 @@ class Venus(Planet):
         self.gravity = 8.9
     
     def getDiameter(self):
+        """ 
+            Finds the diameter of Venus
+            input: self - Venus <class>
+            output: returns diameter of Venus
+        """
         return self.diameter
     
     def getGravity(self):
+        """ 
+            Finds the gravitational acceleration of Venus
+            input: self - Venus <class>
+            output: returns gravitational acceleration of Venus
+        """
         return self.gravity
 
     def info(self):
@@ -59,9 +99,19 @@ class Earth(Planet):
         self.gravity = 9.8
     
     def getDiameter(self):
+        """ 
+            Finds the diameter of Earth
+            input: self - Earth <class>
+            output: returns diameter of Earth
+        """
         return self.diameter
     
     def getGravity(self):
+        """ 
+            Finds the gravitational acceleration of Earth
+            input: self - Earth <class>
+            output: returns gravitational acceleration of Earth
+        """
         return self.gravity
 
     def info(self):
@@ -74,9 +124,19 @@ class Mars(Planet):
         self.gravity = 3.7
     
     def getDiameter(self):
+        """ 
+            Finds the diameter of Mars
+            input: self - Mars <class>
+            output: returns diameter of Mars
+        """
         return self.diameter
     
     def getGravity(self):
+        """ 
+            Finds the gravitational acceleration of Mars
+            input: self - Mars <class>
+            output: returns gravitational acceleration of Mars
+        """
         return self.gravity
 
     def info(self):
@@ -89,9 +149,19 @@ class Jupiter(Planet):
         self.gravity = 23.1
     
     def getDiameter(self):
+        """ 
+            Finds the diameter of Jupiter
+            input: self - Jupiter <class>
+            output: returns diameter of Jupiter
+        """
         return self.diameter
     
     def getGravity(self):
+        """ 
+            Finds the gravitational acceleration of Jupiter
+            input: self - Jupiter <class>
+            output: returns gravitational acceleration of Jupiter
+        """
         return self.gravity
 
     def info(self):
@@ -104,9 +174,19 @@ class Saturn(Planet):
         self.gravity = 9.0
     
     def getDiameter(self):
+        """ 
+            Finds the diameter of Saturn
+            input: self - Saturn <class>
+            output: returns diameter of Saturn
+        """
         return self.diameter
     
     def getGravity(self):
+        """ 
+            Finds the gravitational acceleration of Saturn
+            input: self - Saturn <class>
+            output: returns gravitational acceleration of Saturn
+        """
         return self.gravity
 
     def info(self):
@@ -119,9 +199,19 @@ class Uranus(Planet):
         self.gravity = 8.7
     
     def getDiameter(self):
+        """ 
+            Finds the diameter of Uranus
+            input: self - Uranus <class>
+            output: returns diameter of Uranus
+        """
         return self.diameter
     
     def getGravity(self):
+        """ 
+            Finds the gravitational acceleration of Uranus
+            input: self - Uranus <class>
+            output: returns gravitational acceleration of Uranus
+        """
         return self.gravity
 
     def info(self):
@@ -134,9 +224,19 @@ class Neptune(Planet):
         self.gravity = 11.0
     
     def getDiameter(self):
+        """ 
+            Finds the diameter of Neptune
+            input: self - Neptune <class>
+            output: returns diameter of Neptune
+        """
         return self.diameter
     
     def getGravity(self):
+        """ 
+            Finds the gravitational acceleration of Neptune
+            input: self - Neptune <class>
+            output: returns gravitational acceleration of Neptune
+        """
         return self.gravity
 
     def info(self):
@@ -149,9 +249,19 @@ class Pluto(Planet):
         self.gravity = 0.7
     
     def getDiameter(self):
+        """ 
+            Finds the diameter of Pluto
+            input: self - Pluto <class>
+            output: returns diameter of Pluto
+        """
         return self.diameter
     
     def getGravity(self):
+        """ 
+            Finds the gravitational acceleration of Pluto
+            input: self - Pluto <class>
+            output: returns gravitational acceleration of Pluto
+        """
         return self.gravity
 
     def info(self):
