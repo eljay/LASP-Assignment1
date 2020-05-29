@@ -1,9 +1,18 @@
 #!/usr/bin/python3
 
 class Planet(object):
-    def __init__(self, distance, orbitalPeriod):
+    def __init__(self, name, distance, orbitalPeriod):
+        self.name = name
         self.distanceToSun = distance
         self.orbitalPeriod = orbitalPeriod
+    
+    def getName(self):
+        """
+            Retrieves the name of the planet
+            input: self - Planet <class>
+            output: returna planet name
+        """
+        return self.name
 
     def getDistanceToSun(self):
         """ 
@@ -26,6 +35,13 @@ class Planet(object):
     def info(self):
         return "The Planet is {} km to its sun and takes {} Earth years to orbit its sun.".format(self.getDistanceToSun(), self.getOrbitalPeriod())
 
+    def setName(self, name):
+        """
+            Sets the name of the planet
+            input: self, name <class>
+        """
+        self.name = name
+
     def setDistanceToSun(self, distance):
         """ 
             Sets the distance to the sun for Planet
@@ -44,7 +60,7 @@ class Planet(object):
 
 class Mercury(Planet):
     def __init__(self):
-        Planet.__init__(self, 57900000, 88.0)
+        Planet.__init__(self, "Mercury", 57900000, 88.0)
         self.diameter = 4879
         self.gravity = 3.7
     
@@ -69,7 +85,7 @@ class Mercury(Planet):
 
 class Venus(Planet):
     def __init__(self):
-        Planet.__init__(self, 108200000, 224.7)
+        Planet.__init__(self, "Venus", 108200000, 224.7)
         self.diameter = 12104
         self.gravity = 8.9
     
@@ -94,7 +110,7 @@ class Venus(Planet):
 
 class Earth(Planet):
     def __init__(self):
-        Planet.__init__(self, 149600000, 365.2)
+        Planet.__init__(self, "Earth", 149600000, 365.2)
         self.diameter = 12756
         self.gravity = 9.8
     
@@ -119,7 +135,7 @@ class Earth(Planet):
 
 class Mars(Planet):
     def __init__(self):
-        Planet.__init__(self, 227900000, 687.0)
+        Planet.__init__(self, "Mars", 227900000, 687.0)
         self.diameter = 6792
         self.gravity = 3.7
     
@@ -144,7 +160,7 @@ class Mars(Planet):
 
 class Jupiter(Planet):
     def __init__(self):
-        Planet.__init__(self, 778600000, 4331.0)
+        Planet.__init__(self, "Jupiter", 778600000, 4331.0)
         self.diameter = 142984
         self.gravity = 23.1
     
@@ -169,7 +185,7 @@ class Jupiter(Planet):
 
 class Saturn(Planet):
     def __init__(self):
-        Planet.__init__(self, 1433500000, 10747.0)
+        Planet.__init__(self, "Saturn", 1433500000, 10747.0)
         self.diameter = 120536
         self.gravity = 9.0
     
@@ -194,7 +210,7 @@ class Saturn(Planet):
 
 class Uranus(Planet):
     def __init__(self):
-        Planet.__init__(self, 2872500000, 30589.0)
+        Planet.__init__(self, "Uranus", 2872500000, 30589.0)
         self.diameter = 51118
         self.gravity = 8.7
     
@@ -219,7 +235,7 @@ class Uranus(Planet):
   
 class Neptune(Planet):
     def __init__(self):
-        Planet.__init__(self, 4495100000, 59800.0)
+        Planet.__init__(self, "Neptune", 4495100000, 59800.0)
         self.diameter = 49528
         self.gravity = 11.0
     
@@ -244,7 +260,7 @@ class Neptune(Planet):
 
 class Pluto(Planet):
     def __init__(self):
-        Planet.__init__(self, 5906400000, 90560.0)
+        Planet.__init__(self, "Pluto", 5906400000, 90560.0)
         self.diameter = 2370
         self.gravity = 0.7
     
